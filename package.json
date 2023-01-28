@@ -1,6 +1,10 @@
 {
   "name": "vuepress-theme-hope-starter",
   "description": "A online demo for vuepress-theme-hope",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vuepress-theme-hope/online-demo.git"
+  },
   "license": "MIT",
   "private": true,
   "scripts": {
