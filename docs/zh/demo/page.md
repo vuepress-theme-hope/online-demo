@@ -51,7 +51,7 @@ copyright: 无版权
 
 :::
 
-主题包含了一个自定义徽章章可以使用:
+主题包含了一个自定义徽章可以使用:
 
 > 文字结尾应该有深蓝色的 徽章文字 徽章。 <Badge text="徽章文字" color="#242378" />
 
@@ -59,14 +59,14 @@ copyright: 无版权
 
 此页面应当包含:
 
-- [路径导航](https://vuepress-theme-hope.github.io/v2/zh/guide/layout/breadcrumb.html)
-- [标题和页面信息](https://vuepress-theme-hope.github.io/v2/zh/guide/feature/page-info.html)
-- [TOC (文章标题列表)](https://vuepress-theme-hope.github.io/v2/zh/guide/layout/page.html#标题列表)
-- [贡献者、更新时间等页面元信息](https://vuepress-theme-hope.github.io/v2/guide/feature/meta.html)
-- [评论](https://vuepress-theme-hope.github.io/v2/zh/guide/feature/comment.html)
-- [导航栏](https://vuepress-theme-hope.github.io/v2/zh/guide/layout/navbar.html)
-- [侧边栏](https://vuepress-theme-hope.github.io/v2/zh/guide/layout/sidebar.html)
-- [页脚](https://vuepress-theme-hope.github.io/v2/zh/guide/layout/footer.html)
+- [路径导航](https://theme-hope.vuejs.press/zh/guide/layout/breadcrumb.html)
+- [标题和页面信息](https://theme-hope.vuejs.press/zh/guide/feature/page-info.html)
+- [TOC (文章标题列表)](https://theme-hope.vuejs.press/zh/guide/layout/page.html#标题列表)
+- [贡献者、更新时间等页面元信息](https://theme-hope.vuejs.press/guide/feature/meta.html)
+- [评论](https://theme-hope.vuejs.press/zh/guide/feature/comment.html)
+- [导航栏](https://theme-hope.vuejs.press/zh/guide/layout/navbar.html)
+- [侧边栏](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html)
+- [页脚](https://theme-hope.vuejs.press/zh/guide/layout/footer.html)
 - 返回顶部按钮
 
 你可以通过主题选项和页面 Frontmatter 自定义它们。

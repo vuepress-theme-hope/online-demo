@@ -1,23 +1,19 @@
-import { defineUserConfig } from 'vuepress';
-import theme from './theme.js';
-
-const base = <'/' | `/${string}/`>process.env.BASE || '/';
+import { defineUserConfig } from "vuepress";
+import theme from "./theme.js";
 
 export default defineUserConfig({
-  base,
-
-  dest: './dist',
+  base: "/",
 
   locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'Docs Demo',
-      description: 'A docs demo for vuepress-theme-hope',
+    "/": {
+      lang: "en-US",
+      title: "Docs Demo",
+      description: "A docs demo for vuepress-theme-hope",
     },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: '文档演示',
-      description: 'vuepress-theme-hope 的文档演示',
+    "/zh/": {
+      lang: "zh-CN",
+      title: "文档演示",
+      description: "vuepress-theme-hope 的文档演示",
     },
   },
 
