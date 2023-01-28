@@ -1,0 +1,19 @@
+{
+  "name": "vuepress-theme-hope-starter",
+  "description": "A online demo for vuepress-theme-hope",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "blog:dev": "vuepress dev blog",
+    "blog:build": "vuepress build blog",
+    "dev": "npm run docs:dev",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.60",
+    "vue": "^3.2.45",
+    "vuepress": "2.0.0-beta.60",
+    "vuepress-theme-hope": "2.0.0-beta.167"
+  }
+}
