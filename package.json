@@ -7,6 +7,7 @@
   },
   "license": "MIT",
   "private": true,
+  "packageManager": "pnpm@8.6.0",
   "scripts": {
     "blog:dev": "vuepress dev blog",
     "blog:build": "vuepress build blog",
@@ -16,8 +17,8 @@
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.62",
-    "vue": "^3.3.2",
+    "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.62",
-    "vuepress-theme-hope": "2.0.0-beta.215"
+    "vuepress-theme-hope": "2.0.0-beta.219"
   }
 }

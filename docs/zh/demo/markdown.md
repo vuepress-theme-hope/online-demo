@@ -1,6 +1,6 @@
 ---
 title: Markdown 展示
-icon: markdown
+icon: fab fa-markdown
 order: 2
 category:
   - 使用指南
@@ -167,6 +167,18 @@ npm i -D vuepress-theme-hope
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/image.html)
 
+#### 卡片
+
+```card
+title: Mr.Hope
+desc: Where there is light, there is hope
+logo: https://mrhope.site/logo.svg
+link: https://mrhope.site
+color: rgba(253, 230, 138, 0.15)
+```
+
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/card.html)
+
 #### 图表
 
 ::: chart 一个散点图案例
@@ -245,6 +257,9 @@ cond(no)->e
 #### Mermaid
 
 ```mermaid
+---
+title: Flowchart
+---
 flowchart TB
     c1-->a2
     subgraph one
@@ -385,4 +400,4 @@ $$
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/presentation.html)
 
-[md-enhance]: https://theme-hope.vuejs.press/md-enhance/zh/
+[md-enhance]: https://plugin-md-enhance.vuejs.press/zh/

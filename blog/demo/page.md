@@ -2,7 +2,7 @@
 # This is the title of the article
 title: Page Config
 # This is the icon of the page
-icon: page
+icon: file
 # This control sidebar order
 order: 1
 # Set author
@@ -32,7 +32,7 @@ Content before `more` comment is regarded as page excerpt.
 
 ## Page Information
 
-You can set page information in Markdown’s Frontmatter.
+You can set page information in Markdown's Frontmatter.
 
 - The author is Ms.Hope.
 - The writing date is January 1, 2020
