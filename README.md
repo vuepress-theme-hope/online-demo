@@ -4,10 +4,10 @@
 
 ## Docs Demo
 
-- Preview: `npm run docs:dev`
-- Build: `npm run docs:build`
+- Preview: `pnpm run docs:dev`
+- Build: `pnpm run docs:build`
 
 ## Blog Demo
 
-- Preview: `npm run blog:dev`
-- Build: `npm run blog:build`
+- Preview: `pnpm run blog:dev`
+- Build: `pnpm run blog:build`

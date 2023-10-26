@@ -2,12 +2,9 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
-const hostname =
-  process.env["HOSTNAME"] || "https://theme-hope-docs-demo.vuejs.press";
-
 export default hopeTheme(
   {
-    hostname,
+    hostname: "https://your.domain",
 
     author: {
       name: "Mr.Hope",
@@ -18,9 +15,9 @@ export default hopeTheme(
 
     logo: "/logo.svg",
 
-    repo: "vuepress-theme-hope/vuepress-theme-hope",
+    repo: "vuepress-theme-hope/online-demo",
 
-    docsDir: "demo/theme-docs/src",
+    docsDir: "docs",
 
     locales: {
       "/": {
@@ -68,6 +65,7 @@ export default hopeTheme(
     },
 
     plugins: {
+      // You should generate and use your own comment service
       comment: {
         provider: "Giscus",
         repo: "vuepress-theme-hope/giscus-discussions",
@@ -80,25 +78,48 @@ export default hopeTheme(
       mdEnhance: {
         align: true,
         attrs: true,
-        chart: true,
+        card: true,
+
+        // install chart.js before enabling it
+        // chart: true,
+
         codetabs: true,
         demo: true,
-        echarts: true,
+
+        // install echarts before enabling it
+        // echarts: true,
+
         figure: true,
-        flowchart: true,
-        gfm: true,
+
+        // install flowchart.ts before enabling it
+        // flowchart: true,
+
+        // gfm requires mathjax-full to provide tex support
+        // gfm: true,
         imgLazyload: true,
         imgSize: true,
         include: true,
-        katex: true,
+
+        // install katex before enabling it
+        // katex: true,
+
+        // install mathjax-full before enabling it
+        // mathjax: true,
+
         mark: true,
-        mermaid: true,
+
+        // install mermaid before enabling it
+        // mermaid: true,
+
         playground: {
           presets: ["ts", "vue"],
         },
-        revealjs: {
-          plugins: ["highlight", "math", "search", "notes", "zoom"],
-        },
+
+        // install reveal.js before enabling it
+        // revealJs: {
+        //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+        // },
+
         stylize: [
           {
             matcher: "Recommended",
@@ -116,70 +137,68 @@ export default hopeTheme(
         sup: true,
         tabs: true,
         vPre: true,
-        vuePlayground: true,
+
+        // install @vue/repl before enabling it
+        // vuePlayground: true,
       },
 
-      pwa: {
-        favicon: "/favicon.ico",
-        cacheHTML: true,
-        cachePic: true,
-        appendBase: true,
-        apple: {
-          icon: "/assets/icon/apple-icon-152.png",
-          statusBarColor: "black",
-        },
-        msTile: {
-          image: "/assets/icon/ms-icon-144.png",
-          color: "#ffffff",
-        },
-        manifest: {
-          icons: [
-            {
-              src: "/assets/icon/chrome-mask-512.png",
-              sizes: "512x512",
-              purpose: "maskable",
-              type: "image/png",
-            },
-            {
-              src: "/assets/icon/chrome-mask-192.png",
-              sizes: "192x192",
-              purpose: "maskable",
-              type: "image/png",
-            },
-            {
-              src: "/assets/icon/chrome-512.png",
-              sizes: "512x512",
-              type: "image/png",
-            },
-            {
-              src: "/assets/icon/chrome-192.png",
-              sizes: "192x192",
-              type: "image/png",
-            },
-          ],
-          shortcuts: [
-            {
-              name: "Demo",
-              short_name: "Demo",
-              url: "/demo/",
-              icons: [
-                {
-                  src: "/assets/icon/guide-maskable.png",
-                  sizes: "192x192",
-                  purpose: "maskable",
-                  type: "image/png",
-                },
-              ],
-            },
-          ],
-        },
-      },
-
-      seo:
-        hostname === "https://theme-hope-docs-demo.vuejs.press"
-          ? {}
-          : { canonical: "https://theme-hope-docs-demo.vuejs.press" },
+      // uncomment these if you want a pwa
+      // pwa: {
+      //   favicon: "/favicon.ico",
+      //   cacheHTML: true,
+      //   cachePic: true,
+      //   appendBase: true,
+      //   apple: {
+      //     icon: "/assets/icon/apple-icon-152.png",
+      //     statusBarColor: "black",
+      //   },
+      //   msTile: {
+      //     image: "/assets/icon/ms-icon-144.png",
+      //     color: "#ffffff",
+      //   },
+      //   manifest: {
+      //     icons: [
+      //       {
+      //         src: "/assets/icon/chrome-mask-512.png",
+      //         sizes: "512x512",
+      //         purpose: "maskable",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-mask-192.png",
+      //         sizes: "192x192",
+      //         purpose: "maskable",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-512.png",
+      //         sizes: "512x512",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-192.png",
+      //         sizes: "192x192",
+      //         type: "image/png",
+      //       },
+      //     ],
+      //     shortcuts: [
+      //       {
+      //         name: "Demo",
+      //         short_name: "Demo",
+      //         url: "/demo/",
+      //         icons: [
+      //           {
+      //             src: "/assets/icon/guide-maskable.png",
+      //             sizes: "192x192",
+      //             purpose: "maskable",
+      //             type: "image/png",
+      //           },
+      //         ],
+      //       },
+      //     ],
+      //   },
+      // },
     },
   },
-  { custom: true },
+  { custom: true }
 );
