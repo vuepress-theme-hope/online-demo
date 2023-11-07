@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@8.9.2",
+  "packageManager": "pnpm@8.10.2",
   "scripts": {
     "blog:dev": "vuepress dev blog",
     "blog:build": "vuepress build blog",
@@ -18,9 +18,9 @@
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.67",
     "@vuepress/utils": "2.0.0-beta.67",
-    "vue": "^3.3.7",
+    "vue": "^3.3.8",
     "vuepress": "2.0.0-beta.67",
-    "vuepress-shared": "2.0.0-beta.242",
-    "vuepress-theme-hope": "2.0.0-beta.242"
+    "vuepress-shared": "2.0.0-beta.246",
+    "vuepress-theme-hope": "2.0.0-beta.246"
   }
 }
