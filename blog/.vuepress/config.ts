@@ -25,7 +25,8 @@ export default defineUserConfig({
 
   theme,
 
-  shouldPrefetch: false,
+  // enable it with pwa
+  // shouldPrefetch: false,
 
   alias: {
     "@theme-hope/modules/blog/components/BlogHero": path.resolve(
