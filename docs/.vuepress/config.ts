@@ -1,3 +1,4 @@
+import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
@@ -18,6 +19,8 @@ export default defineUserConfig({
       description: "vuepress-theme-hope 的文档演示",
     },
   },
+
+  bundler: viteBundler(),
 
   theme,
 
