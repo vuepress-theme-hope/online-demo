@@ -15,11 +15,11 @@
     "docs:dev": "vuepress dev docs"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.2",
-    "@vuepress/helper": "2.0.0-rc.6",
-    "vue": "^3.4.15",
-    "vuepress": "2.0.0-rc.2",
-    "vuepress-theme-hope": "2.0.0-rc.18"
+    "@vuepress/bundler-vite": "2.0.0-rc.8",
+    "@vuepress/helper": "2.0.0-rc.15",
+    "vue": "^3.4.19",
+    "vuepress": "2.0.0-rc.8",
+    "vuepress-theme-hope": "2.0.0-rc.25"
   },
-  "packageManager": "pnpm@8.15.1"
+  "packageManager": "pnpm@8.15.3"
 }
