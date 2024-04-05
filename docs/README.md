@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Project home
-heroImage: /logo.svg
+heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
@@ -135,6 +135,11 @@ highlights:
         icon: fab fa-vuejs
         details: Show living vue component in playground
         link: https://theme-hope.vuejs.press/guide/markdown/vue-playground.html
+
+      - title: Sandpack playground Support
+        icon: code
+        details: A live coding environment driven by Sandpack.
+        link: https://theme-hope.vuejs.press/guide/markdown/sandpack.html
 
       - title: Code Demo Support
         icon: laptop-code

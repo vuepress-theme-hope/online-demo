@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: 项目主页
-heroImage: /logo.svg
+heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
@@ -135,6 +135,11 @@ highlights:
         icon: fab fa-vuejs
         details: 在交互演示中展示 Vue 组件
         link: https://theme-hope.vuejs.press/zh/guide/markdown/vue-playground.html
+
+      - title: Sandpack 交互演示支持
+        icon: code
+        details: Sandpack 驱动的实时的编码环境
+        link: https://theme-hope.vuejs.press/zh/guide/markdown/sandpack.html
 
       - title: 代码案例支持
         icon: laptop-code
