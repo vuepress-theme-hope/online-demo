@@ -179,7 +179,7 @@ You can mark ==important words== .
 - [x] Plan A
 - [ ] Plan B
 
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/tasklist.html)
+[View Detail](https://theme-hope.vuejs.press/guide/markdown/tasklist.html)
 
 #### Image Enhancement
 
@@ -201,7 +201,7 @@ background: rgba(253, 230, 138, 0.15)
 
 #### Include files
 
-<!-- @include: ./README.md{11-17} -->
+<!-- @include: ../README.md{276-281} -->
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/include.html)
 

@@ -105,6 +105,7 @@ export default hopeTheme(
         ],
         sub: true,
         sup: true,
+        tasklist: true,
         tabs: true,
         vPre: true,
 

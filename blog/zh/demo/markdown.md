@@ -159,7 +159,7 @@ npm i -D vuepress-theme-hope
 - [x] 计划 1
 - [ ] 计划 2
 
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/tasklist.html)
+[查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/tasklist.html)
 
 ### 图片增强
 
@@ -181,7 +181,7 @@ background: rgba(253, 230, 138, 0.15)
 
 #### 导入文件
 
-<!-- @include: ./README.md{11-17} -->
+<!-- @include: ../README.md{276-281} -->
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/include.html)
 
