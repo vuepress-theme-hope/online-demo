@@ -9,8 +9,8 @@ devDependencies:
     specifier: 2.0.0-rc.9
     version: 2.0.0-rc.9
   '@vuepress/helper':
-    specifier: 2.0.0-rc.23
-    version: 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+    specifier: 2.0.0-rc.24
+    version: 2.0.0-rc.24(vuepress@2.0.0-rc.9)
   vue:
     specifier: ^3.4.21
     version: 3.4.21
@@ -1021,6 +1021,21 @@ packages:
       - typescript
     dev: true
 
+  /@vuepress/helper@2.0.0-rc.24(vuepress@2.0.0-rc.9):
+    resolution: {integrity: sha512-qXC+tXTKfZ7eJ+h3wYC/7Q903Tbqcz9Vqxku63R6pmcpbsRtt3l8XQRdJ/LMT5yX0wZln4Qzx1NY6S4psr0lzw==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.9
+    dependencies:
+      '@vue/shared': 3.4.21
+      cheerio: 1.0.0-rc.12
+      fflate: 0.8.2
+      gray-matter: 4.0.3
+      vue: 3.4.21
+      vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
   /@vuepress/markdown@2.0.0-rc.9:
     resolution: {integrity: sha512-e7as2ar3RQp0bUyMiwBPi7L/G2fzscb3s0BywNcAwubFR22o0/dBEYRYdrN0clPQ2FXpPxF6AFj4aD7O1heCbw==}
     dependencies:
@@ -1062,7 +1077,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       '@vueuse/core': 10.9.0(vue@3.4.21)
       vue: 3.4.21
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
@@ -1076,7 +1091,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       chokidar: 3.6.0
       vue: 3.4.21
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
@@ -1089,7 +1104,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       vue: 3.4.21
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
     transitivePeerDependencies:
@@ -1114,7 +1129,7 @@ packages:
       twikoo:
         optional: true
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       giscus: 1.5.0
       vue: 3.4.21
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
@@ -1127,7 +1142,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       '@vueuse/core': 10.9.0(vue@3.4.21)
       vue: 3.4.21
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
@@ -1141,7 +1156,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       '@vueuse/core': 10.9.0(vue@3.4.21)
       vue: 3.4.21
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
@@ -1175,7 +1190,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
     transitivePeerDependencies:
       - typescript
@@ -1197,7 +1212,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       '@vueuse/core': 10.9.0(vue@3.4.21)
       photoswipe: 5.4.3
       vue: 3.4.21
@@ -1221,7 +1236,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       vue: 3.4.21
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
     transitivePeerDependencies:
@@ -1244,7 +1259,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
     transitivePeerDependencies:
       - typescript
@@ -1255,7 +1270,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.9
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.23(vuepress@2.0.0-rc.9)
+      '@vuepress/helper': 2.0.0-rc.24(vuepress@2.0.0-rc.9)
       sitemap: 7.1.1
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9)(vue@3.4.21)
     transitivePeerDependencies:
