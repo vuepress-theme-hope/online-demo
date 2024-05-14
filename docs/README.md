@@ -48,7 +48,7 @@ highlights:
 
       - title: GFM alerts
         icon: bell
-        details: GFM alert box
+        details: GFM alerts
         link: https://theme-hope.vuejs.press/guide/markdown/alert.html
 
       - title: Tabs
@@ -97,8 +97,8 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/image.html
 
       - title: Component Support
-        icon: puzzle-piece
-        details: Easily insert components in Markdown
+        icon: square
+        details: Add component easily in Markdown
         link: https://theme-hope.vuejs.press/guide/markdown/component.html
 
       - title: Chart Support
@@ -116,9 +116,9 @@ highlights:
         details: Add mermaid diagram in Markdown
         link: https://theme-hope.vuejs.press/guide/markdown/mermaid.html
 
-      - title: Tex Support
+      - title: TeX Support
         icon: square-root-variable
-        details: Markdown now have Tex Support so you can write your formula
+        details: Markdown now have TeX Support so you can write your formula
         link: https://theme-hope.vuejs.press/guide/markdown/tex.html
 
       - title: Include snippet Support
@@ -175,7 +175,7 @@ highlights:
       - title: Slide Page
         icon: person-chalkboard
         details: Adding slide pages to display things you like
-        link: https://theme-hope.vuejs.press/guide/layout/slides
+        link: https://theme-hope.vuejs.press/guide/layout/slides.html
 
       - title: More
         icon: ellipsis

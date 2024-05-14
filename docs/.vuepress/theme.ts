@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
@@ -13,7 +14,7 @@ export default hopeTheme(
 
     iconAssets: "fontawesome-with-brands",
 
-    logo: "/logo.svg",
+    logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
     repo: "vuepress-theme-hope/online-demo",
 
@@ -21,10 +22,10 @@ export default hopeTheme(
 
     locales: {
       "/": {
-        // navbar
+        // Navbar
         navbar: enNavbar,
 
-        // sidebar
+        // Sidebar
         sidebar: enSidebar,
 
         footer: "Default footer",
@@ -40,17 +41,17 @@ export default hopeTheme(
        * Chinese locale config
        */
       "/zh/": {
-        // navbar
+        // Navbar
         navbar: zhNavbar,
 
-        // sidebar
+        // Sidebar
         sidebar: zhSidebar,
 
         footer: "默认页脚",
 
         displayFooter: true,
 
-        // page meta
+        // Page meta
         metaLocales: {
           editLink: "在 GitHub 上编辑此页",
         },
@@ -59,7 +60,9 @@ export default hopeTheme(
 
     encrypt: {
       config: {
+        // eslint-disable-next-line @typescript-eslint/naming-convention
         "/demo/encrypt.html": ["1234"],
+        // eslint-disable-next-line @typescript-eslint/naming-convention
         "/zh/demo/encrypt.html": ["1234"],
       },
     },
@@ -90,6 +93,7 @@ export default hopeTheme(
         imgSize: true,
         include: true,
         mark: true,
+        spoiler: true,
         stylize: [
           {
             matcher: "Recommended",
@@ -105,8 +109,8 @@ export default hopeTheme(
         ],
         sub: true,
         sup: true,
-        tasklist: true,
         tabs: true,
+        tasklist: true,
         vPre: true,
 
         // install chart.js before enabling it
@@ -149,7 +153,7 @@ export default hopeTheme(
       // pwa: {
       //   favicon: "/favicon.ico",
       //   cacheHTML: true,
-      //   cachePic: true,
+      //   cacheImage: true,
       //   appendBase: true,
       //   apple: {
       //     icon: "/assets/icon/apple-icon-152.png",
@@ -187,6 +191,7 @@ export default hopeTheme(
       //     shortcuts: [
       //       {
       //         name: "Demo",
+      //         // eslint-disable-next-line @typescript-eslint/naming-convention
       //         short_name: "Demo",
       //         url: "/demo/",
       //         icons: [

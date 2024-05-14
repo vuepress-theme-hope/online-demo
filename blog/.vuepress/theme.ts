@@ -1,8 +1,8 @@
 import { dateSorter } from "@vuepress/helper";
 import { hopeTheme } from "vuepress-theme-hope";
+
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
-import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme(
   {
@@ -15,7 +15,7 @@ export default hopeTheme(
 
     iconAssets: "fontawesome-with-brands",
 
-    logo: "/logo.svg",
+    logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
     repo: "vuepress-theme-hope/online-demo",
 
@@ -54,16 +54,19 @@ export default hopeTheme(
         Whatsapp: "https://example.com",
         Youtube: "https://example.com",
         Zhihu: "https://example.com",
-        MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
+        VuePressThemeHope: [
+          "https://theme-hope.vuejs.press",
+          "https://theme-hope-assets.vuejs.press/logo.svg",
+        ],
       },
     },
 
     locales: {
       "/": {
-        // navbar
+        // Navbar
         navbar: enNavbar,
 
-        // sidebar
+        // Sidebar
         sidebar: enSidebar,
 
         footer: "Default footer",
@@ -88,10 +91,10 @@ export default hopeTheme(
        * Chinese locale config
        */
       "/zh/": {
-        // navbar
+        // Navbar
         navbar: zhNavbar,
 
-        // sidebar
+        // Sidebar
         sidebar: zhSidebar,
 
         footer: "默认页脚",
@@ -107,7 +110,7 @@ export default hopeTheme(
           tutorial: "教程",
         },
 
-        // page meta
+        // Page meta
         metaLocales: {
           editLink: "在 GitHub 上编辑此页",
         },
@@ -149,7 +152,7 @@ export default hopeTheme(
         components: ["Badge", "VPCard"],
       },
 
-      // all features are enabled for demo, only preserve features you need here
+      // All features are enabled for demo, only preserve features you need here
       mdEnhance: {
         align: true,
         attrs: true,
@@ -161,6 +164,7 @@ export default hopeTheme(
         imgSize: true,
         include: true,
         mark: true,
+        spoiler: true,
         stylize: [
           {
             matcher: "Recommended",
@@ -220,7 +224,7 @@ export default hopeTheme(
       // pwa: {
       //   favicon: "/favicon.ico",
       //   cacheHTML: true,
-      //   cachePic: true,
+      //   cacheImage: true,
       //   appendBase: true,
       //   apple: {
       //     icon: "/assets/icon/apple-icon-152.png",
