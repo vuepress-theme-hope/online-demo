@@ -1,7 +1,7 @@
 ---
 title: Markdown Enhance
 icon: fab fa-markdown
-order: 1
+order: 2
 category:
   - Guide
 tag:
@@ -40,7 +40,33 @@ For these extensions, please read [Markdown extensions in VuePress](https://them
 
 ### Theme Enhancement
 
-By using [`vuepress-plugin-md-enhance`][md-enhance], the theme extends more Markdown syntax and provides richer writing functions.
+By using VuePress plugins, the theme extends more Markdown syntax and provides richer writing functions.
+
+#### Code Tabs
+
+::: code-tabs#shell
+
+@tab pnpm
+
+```bash
+pnpm add -D vuepress-theme-hope
+```
+
+@tab yarn
+
+```bash
+yarn add -D vuepress-theme-hope
+```
+
+@tab:active npm
+
+```bash
+npm i -D vuepress-theme-hope
+```
+
+:::
+
+- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/code-tabs.html)
 
 #### Tabs
 
@@ -75,43 +101,6 @@ This text has footnote[^first].
 <!-- @include: ./README.md{11-17} -->
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/content/include.html)
-
-#### Reveal.js
-
-@slidestart
-
-## Slide 1
-
-A paragraph with some text and a [link](https://mister-hope.com)
-
----
-
-## Slide 2
-
-- Item 1
-- Item 2
-
----
-
-## Slide 3.1
-
-```js
-const a = 1;
-```
-
---
-
-## Slide 3.2
-
-$$
-J(\theta_0,\theta_1) = \sum_{i=0}
-$$
-
-@slideend
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/content/revealjs.html)
-
-<!-- markdownlint-disable MD001 -->
 
 #### TeX
 
@@ -238,141 +227,39 @@ Donate Mr.Hope a cup of coffee. _Recommended_
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/stylize/stylize.html)
 
+#### Reveal.js
+
+<iframe src="https://ecosystem.vuejs.press/plugins/markdown/revealjs/demo.html" width="100%" height="420"/>
+
+- [View Detail](https://theme-hope.vuejs.press/guide/markdown/content/revealjs.html)
+
 #### Chart.js
 
-::: chart A Scatter Chart
-
-```json
-{
-  "type": "scatter",
-  "data": {
-    "datasets": [
-      {
-        "label": "Scatter Dataset",
-        "data": [
-          { "x": -10, "y": 0 },
-          { "x": 0, "y": 10 },
-          { "x": 10, "y": 5 },
-          { "x": 0.5, "y": 5.5 }
-        ],
-        "backgroundColor": "rgb(255, 99, 132)"
-      }
-    ]
-  },
-  "options": {
-    "scales": {
-      "x": {
-        "type": "linear",
-        "position": "bottom"
-      }
-    }
-  }
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/chartjs.html" width="100%" height="450"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/chartjs.html)
 
 #### ECharts
 
-::: echarts A line chart
-
-```json
-{
-  "xAxis": {
-    "type": "category",
-    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-  },
-  "yAxis": {
-    "type": "value"
-  },
-  "series": [
-    {
-      "data": [150, 230, 224, 218, 135, 147, 260],
-      "type": "line"
-    }
-  ]
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/echarts.html" width="100%" height="800"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/echarts.html)
 
 #### Flowchart
 
-```flow
-cond=>condition: Process?
-process=>operation: Process
-e=>end: End
-
-cond(yes)->process->e
-cond(no)->e
-```
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/flowchart.html" width="100%" height="450"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/flowchart.html)
 
 #### MarkMap
 
-````markmap
----
-markmap:
-  colorFreezeLevel: 2
----
-
-# markmap
-
-## Links
-
-- <https://markmap.js.org/>
-- [GitHub](https://github.com/gera2ld/markmap)
-
-## Related Projects
-
-- [coc-markmap](https://github.com/gera2ld/coc-markmap)
-- [gatsby-remark-markmap](https://github.com/gera2ld/gatsby-remark-markmap)
-
-## Features
-
-- links
-- **strong** ~~del~~ *italic* ==highlight==
-- multiline
-  text
-- `inline code`
--
-    ```js
-    console.log('code block');
-    ```
-- Katex
-  - $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-  - [More Katex Examples](#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md)
-- Now we can wrap very very very very long text based on `maxWidth` option
-````
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/markmap.html)
 
 #### Mermaid
 
-```mermaid
----
-title: Flowchart
----
-flowchart TB
-    c1-->a2
-    subgraph one
-    a1-->a2
-    end
-    subgraph two
-    b1-->b2
-    end
-    subgraph three
-    c1-->c2
-    end
-    one --> two
-    three --> two
-    two --> c2
-```
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/mermaid.html" width="100%" height="620"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/mermaid.html)
 
@@ -405,155 +292,32 @@ end
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/plantuml.html)
 
-#### Code Tabs
-
-::: code-tabs#shell
-
-@tab pnpm
-
-```bash
-pnpm add -D vuepress-theme-hope
-```
-
-@tab yarn
-
-```bash
-yarn add -D vuepress-theme-hope
-```
-
-@tab:active npm
-
-```bash
-npm i -D vuepress-theme-hope
-```
-
-:::
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/code-tabs.html)
-
 #### Code Demo
 
-::: normal-demo A normal demo
-
-```html
-<h1>VuePress Theme Hope</h1>
-<p>Is <span id="very">very</span> powerful!</p>
-```
-
-```js
-document.querySelector("#very").addEventListener("click", () => {
-  alert("Very powerful!");
-});
-```
-
-```css
-span {
-  color: red;
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/code-demo.html" width="100%" height="450"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/demo.html)
 
 #### Playground
 
-::: playground#unocss UnoCSS demo
-
-@file index.html
-
-```html
-<div class="flex flex-col text-center h-full justify-center">
-  <div class="text-red">TEST for default preset</div>
-  <div class="text-$fd-color">TEST for custom css</div>
-</div>
-```
-
-@file config.js
-
-```js
-import { defineConfig, presetUno } from "unocss";
-
-export default defineConfig({
-  presets: [presetUno()],
-});
-```
-
-@file custom.css
-
-```css
-:root {
-  --fd-color: green;
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/playground.html" width="100%" height="480"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/playground.html)
 
 #### Kotlin Playground
 
-::: kotlin-playground Simple Playground
-
-@file main.kt
-
-```kotlin
-class Contact(val id: Int, var email: String)
-
-fun main(args: Array<String>) {
-    val contact = Contact(1, "mary@gmail.com")
-    println(contact.id)
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/kotlin-playground.html" width="100%" height="220"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/kotlin-playground.html)
 
 #### Sandpack Playground
 
-::: sandpack#vue Vue Demo
-
-@file /src/App.vue
-
-```vue
-<script setup>
-import { ref } from "vue";
-
-const msg = ref("Hello Playground!");
-</script>
-
-<template>
-  <h1>{{ msg }}</h1>
-  <input v-model="msg" />
-</template>
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/sandpack.html" width="100%" height="380"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/sandpack.html)
 
 #### Vue Playground
 
-::: vue-playground Vue Playground
-
-@file App.vue
-
-```vue
-<script setup>
-import { ref } from "vue";
-
-const msg = ref("Hello World!");
-</script>
-
-<template>
-  <h1>{{ msg }}</h1>
-  <input v-model="msg" />
-</template>
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/vue-playground.html" width="100%" height="380"/>
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/vue-playground.html)
-
-[md-enhance]: https://md-enhance.vuejs.press/

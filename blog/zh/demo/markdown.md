@@ -10,7 +10,7 @@ tag:
 
 VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
 
-你应该创建和编写 Markdown 文件，以便 VuePress 可以根据文件结构将它们转换为不同的页面。
+你需要创建并编写 Markdown，以便 VuePress 可以根据文件结构将它们转换为不同的页面。
 
 <!-- more -->
 
@@ -40,7 +40,7 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 
 ### 主题扩展
 
-通过 [`vuepress-plugin-md-enhance`][md-enhance]，主题扩展了更多 Markdown 语法，提供更加丰富的写作功能。
+通过 VuePress 插件，主题扩展了更多 Markdown 语法，提供更加丰富的写作功能。
 
 #### 选项卡
 
@@ -75,43 +75,6 @@ Orange
 <!-- @include: ./README.md{11-17} -->
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/include.html)
-
-#### 幻灯片
-
-@slidestart
-
-## 幻灯片 1
-
-一个有文字和 [链接](https://mister-hope.com) 的段落
-
----
-
-## 幻灯片 2
-
-- 项目 1
-- 项目 2
-
----
-
-## 幻灯片 3.1
-
-```js
-const a = 1;
-```
-
---
-
-## 幻灯片 3.2
-
-$$
-J(\theta_0,\theta_1) = \sum_{i=0}
-$$
-
-@slideend
-
-- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/revealjs.html)
-
-<!-- markdownlint-disable MD001 -->
 
 #### TeX 语法
 
@@ -240,133 +203,31 @@ VuePress Theme Hope !!十分强大!!.
 
 #### 图表
 
-::: chart 一个散点图案例
-
-```json
-{
-  "type": "scatter",
-  "data": {
-    "datasets": [
-      {
-        "label": "散点数据集",
-        "data": [
-          { "x": -10, "y": 0 },
-          { "x": 0, "y": 10 },
-          { "x": 10, "y": 5 },
-          { "x": 0.5, "y": 5.5 }
-        ],
-        "backgroundColor": "rgb(255, 99, 132)"
-      }
-    ]
-  },
-  "options": {
-    "scales": {
-      "x": {
-        "type": "linear",
-        "position": "bottom"
-      }
-    }
-  }
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/chartjs.html" width="100%" height="450"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/chartjs.html)
 
 #### ECharts
 
-::: echarts 一个折线图案例
-
-```json
-{
-  "xAxis": {
-    "type": "category",
-    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-  },
-  "yAxis": {
-    "type": "value"
-  },
-  "series": [
-    {
-      "data": [150, 230, 224, 218, 135, 147, 260],
-      "type": "line"
-    }
-  ]
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/echarts.html" width="100%" height="800"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/echarts.html)
 
 #### 流程图
 
-```flow
-cond=>condition: 是否执行操作?
-process=>operation: 操作
-e=>end: 结束
-
-cond(yes)->process->e
-cond(no)->e
-```
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/flowchart.html" width="100%" height="450"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/flowchart.html)
 
 #### MarkMap
 
-````markmap
----
-markmap:
-  colorFreezeLevel: 2
----
-
-# markmap
-
-## 链接
-
-- <https://markmap.js.org/>
-- [GitHub](https://github.com/markmap/markmap)
-
-## 功能
-
-- 链接
-- **强调** ~~删除线~~ *斜体* ==高亮==
-- 多行
-  文字
-- `行内代码`
--
-    ```js
-    console.log('code block');
-    ```
-- Katex
-  - $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-- 现在我们可以通过 `maxWidth` 选项自动换行非常非常非常非常非常非常非常非常非常非常长的内容
-````
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/markmap.html)
 
 #### Mermaid
 
-```mermaid
----
-title: Flowchart
----
-flowchart TB
-    c1-->a2
-    subgraph one
-    a1-->a2
-    end
-    subgraph two
-    b1-->b2
-    end
-    subgraph three
-    c1-->c2
-    end
-    one --> two
-    three --> two
-    two --> c2
-```
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/mermaid.html" width="100%" height="620"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/chart/mermaid.html)
 
@@ -427,127 +288,36 @@ npm i -D vuepress-theme-hope
 
 #### 代码演示
 
-::: normal-demo 一个普通 Demo
-
-```html
-<h1>VuePress Theme Hope</h1>
-<p><span id="very">非常</span>强大!</p>
-```
-
-```js
-document.querySelector("#very").addEventListener("click", () => {
-  alert("非常强大");
-});
-```
-
-```css
-span {
-  color: red;
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/code-demo.html" width="100%" height="450"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/demo.html)
 
 #### 交互演示
 
-::: playground#unocss UnoCSS 示例
-
-@file index.html
-
-```html
-<div class="flex flex-col text-center h-full justify-center">
-  <div class="text-red">TEST for default preset</div>
-  <div class="text-$fd-color">TEST for custom css</div>
-</div>
-```
-
-@file config.js
-
-```js
-import { defineConfig, presetUno } from "unocss";
-
-export default defineConfig({
-  presets: [presetUno()],
-});
-```
-
-@file custom.css
-
-```css
-:root {
-  --fd-color: green;
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/playground.html" width="100%" height="480"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/playground.html)
 
 #### Kotlin 交互演示
 
-::: kotlin-playground Simple Playground
-
-@file main.kt
-
-```kotlin
-class Contact(val id: Int, var email: String)
-
-fun main(args: Array<String>) {
-    val contact = Contact(1, "mary@gmail.com")
-    println(contact.id)
-}
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/kotlin-playground.html" width="100%" height="220"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/kotlin-playground.html)
 
 #### Sandpack 交互演示
 
-::: sandpack#vue Vue 示例
-
-@file /src/App.vue
-
-```vue
-<script setup>
-import { ref } from "vue";
-
-const msg = ref("Hello Playground!");
-</script>
-
-<template>
-  <h1>{{ msg }}</h1>
-  <input v-model="msg" />
-</template>
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/sandpack.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/sandpack.html)
 
 #### Vue 交互演示
 
-::: vue-playground Vue 交互演示
-
-@file App.vue
-
-```vue
-<script setup>
-import { ref } from "vue";
-
-const msg = ref("Hello World!");
-</script>
-
-<template>
-  <h1>{{ msg }}</h1>
-  <input v-model="msg" />
-</template>
-```
-
-:::
+<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/vue-playground.html" width="100%" height="380"/>
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/vue-playground.html)
 
-[md-enhance]: https://plugin-md-enhance.vuejs.press/zh/
+#### 幻灯片
+
+<iframe src="https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html" width="100%" height="420"/>
+
+- [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/content/revealjs.html)
