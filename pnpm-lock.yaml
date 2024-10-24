@@ -9,8 +9,8 @@ devDependencies:
     specifier: 2.0.0-rc.17
     version: 2.0.0-rc.17(sass@1.79.5)
   '@vuepress/helper':
-    specifier: 2.0.0-rc.52
-    version: 2.0.0-rc.52(vuepress@2.0.0-rc.17)
+    specifier: 2.0.0-rc.57
+    version: 2.0.0-rc.57(vuepress@2.0.0-rc.17)
   sass:
     specifier: ^1.79.5
     version: 1.79.5
@@ -1286,6 +1286,23 @@ packages:
     resolution: {integrity: sha512-zePTo0eJkyK7NirwidII1+r8PkuJbsXO0CrcXw/K7Yv8ab8RkQKaUmqLSM21xHZddKuzWEncugGtRIt5yITumw==}
     peerDependencies:
       vuepress: 2.0.0-rc.17
+    dependencies:
+      '@vue/shared': 3.5.12
+      '@vueuse/core': 11.1.0(vue@3.5.12)
+      cheerio: 1.0.0
+      fflate: 0.8.2
+      gray-matter: 4.0.3
+      vue: 3.5.12
+      vuepress: 2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17)(vue@3.5.12)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - typescript
+    dev: true
+
+  /@vuepress/helper@2.0.0-rc.57(vuepress@2.0.0-rc.17):
+    resolution: {integrity: sha512-6tJpiVCMdJ5bu5tvH51o+SIDyQG20kqYBvOPeRRsBVGjp8n0rH6KDGY0xDEkd/HF8mJ9UPqNYvqhsQyI3iKKWQ==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.18
     dependencies:
       '@vue/shared': 3.5.12
       '@vueuse/core': 11.1.0(vue@3.5.12)
