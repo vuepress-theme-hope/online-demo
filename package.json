@@ -16,12 +16,12 @@
     "docs:dev": "vuepress dev docs"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.17",
-    "@vuepress/helper": "2.0.0-rc.52",
-    "sass": "^1.79.5",
-    "vue": "^3.5.12",
-    "vuepress": "2.0.0-rc.17",
-    "vuepress-theme-hope": "2.0.0-rc.58"
+    "@vuepress/bundler-vite": "2.0.0-rc.18",
+    "@vuepress/helper": "2.0.0-rc.63",
+    "sass": "^1.82.0",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.18",
+    "vuepress-theme-hope": "2.0.0-rc.61"
   },
   "packageManager": "pnpm@8.15.9"
 }
