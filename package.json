@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.18",
-    "@vuepress/helper": "2.0.0-rc.63",
+    "@vuepress/helper": "2.0.0-rc.66",
     "sass": "^1.82.0",
     "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.18",

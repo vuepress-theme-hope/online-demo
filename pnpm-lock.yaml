@@ -9,8 +9,8 @@ devDependencies:
     specifier: 2.0.0-rc.18
     version: 2.0.0-rc.18(sass@1.82.0)
   '@vuepress/helper':
-    specifier: 2.0.0-rc.63
-    version: 2.0.0-rc.63(vuepress@2.0.0-rc.18)
+    specifier: 2.0.0-rc.66
+    version: 2.0.0-rc.66(vuepress@2.0.0-rc.18)
   sass:
     specifier: ^1.82.0
     version: 1.82.0
@@ -1369,6 +1369,22 @@ packages:
       - typescript
     dev: true
 
+  /@vuepress/helper@2.0.0-rc.66(vuepress@2.0.0-rc.18):
+    resolution: {integrity: sha512-T/1hzQwT1ShJDOgTvxUXt9Uydmik8cMnOAT6Bpv3OrmhyprSxJ4Riu1gYdn6W5VLf+MD9sUjTvwPAyixvwsI6w==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.19
+    dependencies:
+      '@vue/shared': 3.5.13
+      '@vueuse/core': 12.0.0
+      cheerio: 1.0.0
+      fflate: 0.8.2
+      gray-matter: 4.0.3
+      vue: 3.5.13
+      vuepress: 2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18)(vue@3.5.13)
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
   /@vuepress/highlighter-helper@2.0.0-rc.62(@vueuse/core@12.0.0)(vuepress@2.0.0-rc.18):
     resolution: {integrity: sha512-tWLz314Dzr8dUDDBDmsjnsWVi6AJwXyWFMo2zsYnZGk5v2ZovQvigrtqjxB7OIw2LlizAWGwx4gv8jt7fsxCdQ==}
     peerDependencies:
@@ -2322,6 +2338,7 @@ packages:
   /fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
+    requiresBuild: true
     dependencies:
       to-regex-range: 5.0.1
     dev: true
@@ -2514,6 +2531,7 @@ packages:
   /is-number@7.0.0:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
+    requiresBuild: true
     dev: true
 
   /is-plain-obj@4.1.0:
@@ -3198,6 +3216,7 @@ packages:
   /to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
+    requiresBuild: true
     dependencies:
       is-number: 7.0.0
     dev: true
