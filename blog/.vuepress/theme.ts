@@ -1,141 +1,198 @@
-import { dateSorter } from "@vuepress/helper";
-import { hopeTheme } from "vuepress-theme-hope";
+import { dateSorter } from '@vuepress/helper';
+import { hopeTheme } from 'vuepress-theme-hope';
 
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { enNavbar, zhNavbar } from './navbar/index.js';
+import { enSidebar, zhSidebar } from './sidebar/index.js';
 
 export default hopeTheme(
   {
-    hostname: "https://your.domain",
+    hostname: 'https://your.domain',
 
     author: {
-      name: "Your name",
-      url: "https://your.domain",
+      name: 'Your name',
+      url: 'https://your.domain',
     },
 
-    iconAssets: "fontawesome-with-brands",
+    iconAssets: 'fontawesome-with-brands',
 
-    logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+    logo: 'https://theme-hope-assets.vuejs.press/logo.svg',
 
-    repo: "vuepress-theme-hope/online-demo",
-    docsDir: "blog",
+    repo: 'vuepress-theme-hope/online-demo',
+    docsDir: 'blog',
 
     blog: {
       medias: {
-        Baidu: "https://example.com",
-        BiliBili: "https://example.com",
-        Bitbucket: "https://example.com",
-        Dingding: "https://example.com",
-        Discord: "https://example.com",
-        Dribbble: "https://example.com",
-        Email: "mailto:info@example.com",
-        Evernote: "https://example.com",
-        Facebook: "https://example.com",
-        Flipboard: "https://example.com",
-        Gitee: "https://example.com",
-        GitHub: "https://example.com",
-        Gitlab: "https://example.com",
-        Gmail: "mailto:info@example.com",
-        Instagram: "https://example.com",
-        Lark: "https://example.com",
-        Lines: "https://example.com",
-        Linkedin: "https://example.com",
-        Pinterest: "https://example.com",
-        Pocket: "https://example.com",
-        QQ: "https://example.com",
-        Qzone: "https://example.com",
-        Reddit: "https://example.com",
-        Rss: "https://example.com",
-        Steam: "https://example.com",
-        Twitter: "https://example.com",
-        Wechat: "https://example.com",
-        Weibo: "https://example.com",
-        Whatsapp: "https://example.com",
-        Youtube: "https://example.com",
-        Zhihu: "https://example.com",
+        Baidu: 'https://example.com',
+        BiliBili: 'https://example.com',
+        Bitbucket: 'https://example.com',
+        Dingding: 'https://example.com',
+        Discord: 'https://example.com',
+        Dribbble: 'https://example.com',
+        Email: 'mailto:info@example.com',
+        Evernote: 'https://example.com',
+        Facebook: 'https://example.com',
+        Flipboard: 'https://example.com',
+        Gitee: 'https://example.com',
+        GitHub: 'https://example.com',
+        Gitlab: 'https://example.com',
+        Gmail: 'mailto:info@example.com',
+        Instagram: 'https://example.com',
+        Lark: 'https://example.com',
+        Lines: 'https://example.com',
+        Linkedin: 'https://example.com',
+        Pinterest: 'https://example.com',
+        Pocket: 'https://example.com',
+        QQ: 'https://example.com',
+        Qzone: 'https://example.com',
+        Reddit: 'https://example.com',
+        Rss: 'https://example.com',
+        Steam: 'https://example.com',
+        Twitter: 'https://example.com',
+        Wechat: 'https://example.com',
+        Weibo: 'https://example.com',
+        Whatsapp: 'https://example.com',
+        Youtube: 'https://example.com',
+        Zhihu: 'https://example.com',
         VuePressThemeHope: {
-          icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-          link: "https://theme-hope.vuejs.press",
+          icon: 'https://theme-hope-assets.vuejs.press/logo.svg',
+          link: 'https://theme-hope.vuejs.press',
         },
       },
     },
 
     locales: {
-      "/": {
+      '/': {
         // Navbar
         navbar: enNavbar,
 
         // Sidebar
         sidebar: enSidebar,
 
-        footer: "Default footer",
+        footer: 'Default footer',
 
         displayFooter: true,
 
         blog: {
-          description: "A FrontEnd programmer",
-          intro: "/intro.html",
+          description: 'A FrontEnd programmer',
+          intro: '/intro.html',
         },
 
         blogLocales: {
-          tutorial: "Tutorial",
+          tutorial: 'Tutorial',
         },
 
         metaLocales: {
-          editLink: "Edit this page on GitHub",
+          editLink: 'Edit this page on GitHub',
         },
       },
 
       /**
        * Chinese locale config
        */
-      "/zh/": {
+      '/zh/': {
         // Navbar
         navbar: zhNavbar,
 
         // Sidebar
         sidebar: zhSidebar,
 
-        footer: "默认页脚",
+        footer: '默认页脚',
 
         displayFooter: true,
 
         blog: {
-          description: "一个前端开发者",
-          intro: "/zh/intro.html",
+          description: '一个前端开发者',
+          intro: '/zh/intro.html',
         },
 
         blogLocales: {
-          tutorial: "教程",
+          tutorial: '教程',
         },
 
         // Page meta
         metaLocales: {
-          editLink: "在 GitHub 上编辑此页",
+          editLink: '在 GitHub 上编辑此页',
         },
       },
     },
 
     encrypt: {
       config: {
-        "/demo/encrypt.html": ["1234"],
-        "/zh/demo/encrypt.html": ["1234"],
+        '/demo/encrypt.html': ['1234'],
+        '/zh/demo/encrypt.html': ['1234'],
       },
     },
 
     // enable it to preview all changes in time
     // hotReload: true,
 
+    markdown: {
+      align: true,
+      attrs: true,
+      component: true,
+      demo: true,
+      include: true,
+      mark: true,
+      spoiler: true,
+      stylize: [
+        {
+          matcher: 'Recommended',
+          replacer: ({ tag }) => {
+            if (tag === 'em')
+              return {
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended',
+              };
+          },
+        },
+      ],
+      sub: true,
+      sup: true,
+      tasklist: true,
+      vPre: true,
+      figure: true,
+      imgLazyload: true,
+      imgSize: true,
+      tabs: true,
+      codeTabs: true,
+
+      // install katex or before enabling it
+      // math: {
+      //   type: "katex" // or "mathjax"
+      // },
+      // install chart.js before enabling it
+      // chartjs: true,
+      // insert component easily
+      // install echarts before enabling it
+      // echarts: true,
+      // install flowchart.ts before enabling it
+      // flowchart: true,
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+      // install mermaid before enabling it
+      // mermaid: true,
+      // playground: {
+      //   presets: ["ts", "vue"],
+      // },
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
+      // install @vuepress/plugin-revealjs before enabling it
+      // revealjs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+    },
+
     plugins: {
       blog: {
         type: [
           {
-            key: "tutorial",
+            key: 'tutorial',
             filter: (page): boolean =>
-              Boolean(page.filePathRelative?.includes("demo/")),
+              Boolean(page.filePathRelative?.includes('demo/')),
             sorter: (pageA, pageB): number =>
               dateSorter(pageA.frontmatter.date, pageB.frontmatter.date),
-            layout: "BlogType",
+            layout: 'BlogType',
           },
         ],
       },
@@ -149,72 +206,7 @@ export default hopeTheme(
       // },
 
       components: {
-        components: ["Badge", "VPCard"],
-      },
-
-      markdownImage: {
-        figure: true,
-        lazyload: true,
-        size: true,
-      },
-
-      // install katex or before enabling it
-      // markdownMath: {
-      //   type: "katex" // or "mathjax"
-      // },
-
-      markdownTab: true,
-
-      // All features are enabled for demo, only preserve features you need here
-      mdEnhance: {
-        align: true,
-        attrs: true,
-        component: true,
-        demo: true,
-        include: true,
-        mark: true,
-        spoiler: true,
-        stylize: [
-          {
-            matcher: "Recommended",
-            replacer: ({ tag }) => {
-              if (tag === "em")
-                return {
-                  tag: "Badge",
-                  attrs: { type: "tip" },
-                  content: "Recommended",
-                };
-            },
-          },
-        ],
-        sub: true,
-        sup: true,
-        tasklist: true,
-        vPre: true,
-
-        // install chart.js before enabling it
-        // chart: true,
-
-        // insert component easily
-
-        // install echarts before enabling it
-        // echarts: true,
-
-        // install flowchart.ts before enabling it
-        // flowchart: true,
-
-        // gfm requires mathjax-full to provide tex support
-        // gfm: true,
-
-        // install mermaid before enabling it
-        // mermaid: true,
-
-        // playground: {
-        //   presets: ["ts", "vue"],
-        // },
-
-        // install @vue/repl before enabling it
-        // vuePlayground: true,
+        components: ['Badge', 'VPCard'],
       },
 
       // uncomment these if you want a PWA
@@ -272,12 +264,7 @@ export default hopeTheme(
       //       },
       //     ],
       //   },
-
-      // install @vuepress/plugin-revealjs before enabling it
-      // revealjs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
     },
   },
-  { custom: true },
+  { custom: true }
 );

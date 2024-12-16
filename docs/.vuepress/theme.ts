@@ -1,59 +1,59 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import { hopeTheme } from 'vuepress-theme-hope';
 
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { enNavbar, zhNavbar } from './navbar/index.js';
+import { enSidebar, zhSidebar } from './sidebar/index.js';
 
 export default hopeTheme(
   {
-    hostname: "https://your.domain",
+    hostname: 'https://your.domain',
 
     author: {
-      name: "Your name",
-      url: "https://your.domain",
+      name: 'Your name',
+      url: 'https://your.domain',
     },
 
-    iconAssets: "fontawesome-with-brands",
+    iconAssets: 'fontawesome-with-brands',
 
-    logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+    logo: 'https://theme-hope-assets.vuejs.press/logo.svg',
 
-    repo: "vuepress-theme-hope/online-demo",
+    repo: 'vuepress-theme-hope/online-demo',
 
-    docsDir: "docs",
+    docsDir: 'docs',
 
     locales: {
-      "/": {
+      '/': {
         // Navbar
         navbar: enNavbar,
 
         // Sidebar
         sidebar: enSidebar,
 
-        footer: "Default footer",
+        footer: 'Default footer',
 
         displayFooter: true,
 
         metaLocales: {
-          editLink: "Edit this page on GitHub",
+          editLink: 'Edit this page on GitHub',
         },
       },
 
       /**
        * Chinese locale config
        */
-      "/zh/": {
+      '/zh/': {
         // Navbar
         navbar: zhNavbar,
 
         // Sidebar
         sidebar: zhSidebar,
 
-        footer: "默认页脚",
+        footer: '默认页脚',
 
         displayFooter: true,
 
         // Page meta
         metaLocales: {
-          editLink: "在 GitHub 上编辑此页",
+          editLink: '在 GitHub 上编辑此页',
         },
       },
     },
@@ -61,89 +61,81 @@ export default hopeTheme(
     encrypt: {
       config: {
         // eslint-disable-next-line @typescript-eslint/naming-convention
-        "/demo/encrypt.html": ["1234"],
+        '/demo/encrypt.html': ['1234'],
         // eslint-disable-next-line @typescript-eslint/naming-convention
-        "/zh/demo/encrypt.html": ["1234"],
+        '/zh/demo/encrypt.html': ['1234'],
       },
+    },
+
+    markdown: {
+      align: true,
+      attrs: true,
+      component: true,
+      demo: true,
+      include: true,
+      mark: true,
+      spoiler: true,
+      stylize: [
+        {
+          matcher: 'Recommended',
+          replacer: ({ tag }) => {
+            if (tag === 'em')
+              return {
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended',
+              };
+          },
+        },
+      ],
+      sub: true,
+      sup: true,
+      tasklist: true,
+      vPre: true,
+      figure: true,
+      imgLazyload: true,
+      imgSize: true,
+      tabs: true,
+      codeTabs: true,
+
+      // install katex or before enabling it
+      // math: {
+      //   type: "katex" // or "mathjax"
+      // },
+      // install chart.js before enabling it
+      // chartjs: true,
+      // insert component easily
+      // install echarts before enabling it
+      // echarts: true,
+      // install flowchart.ts before enabling it
+      // flowchart: true,
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+      // install mermaid before enabling it
+      // mermaid: true,
+      // playground: {
+      //   presets: ["ts", "vue"],
+      // },
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
+      // install @vuepress/plugin-revealjs before enabling it
+      // revealjs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
     },
 
     plugins: {
       // You should generate and use your own comment service
       comment: {
-        provider: "Giscus",
-        repo: "vuepress-theme-hope/giscus-discussions",
-        repoId: "R_kgDOG_Pt2A",
-        category: "Announcements",
-        categoryId: "DIC_kwDOG_Pt2M4COD69",
+        provider: 'Giscus',
+        repo: 'vuepress-theme-hope/giscus-discussions',
+        repoId: 'R_kgDOG_Pt2A',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOG_Pt2M4COD69',
       },
 
       components: {
-        components: ["Badge", "VPCard"],
-      },
-
-      markdownImage: {
-        figure: true,
-        lazyload: true,
-        size: true,
-      },
-
-      // install katex or before enabling it
-      // markdownMath: {
-      //   type: "katex" // or "mathjax"
-      // },
-
-      markdownTab: true,
-
-      // All features are enabled for demo, only preserve features you need here
-      mdEnhance: {
-        align: true,
-        attrs: true,
-        component: true,
-        demo: true,
-        include: true,
-        mark: true,
-        spoiler: true,
-        stylize: [
-          {
-            matcher: "Recommended",
-            replacer: ({ tag }) => {
-              if (tag === "em")
-                return {
-                  tag: "Badge",
-                  attrs: { type: "tip" },
-                  content: "Recommended",
-                };
-            },
-          },
-        ],
-        sub: true,
-        sup: true,
-        tasklist: true,
-        vPre: true,
-
-        // install chart.js before enabling it
-        // chart: true,
-
-        // insert component easily
-
-        // install echarts before enabling it
-        // echarts: true,
-
-        // install flowchart.ts before enabling it
-        // flowchart: true,
-
-        // gfm requires mathjax-full to provide tex support
-        // gfm: true,
-
-        // install mermaid before enabling it
-        // mermaid: true,
-
-        // playground: {
-        //   presets: ["ts", "vue"],
-        // },
-
-        // install @vue/repl before enabling it
-        // vuePlayground: true,
+        components: ['Badge', 'VPCard'],
       },
 
       // uncomment these if you want a pwa
@@ -201,12 +193,7 @@ export default hopeTheme(
       //       },
       //     ],
       //   },
-
-      // install @vuepress/plugin-revealjs before enabling it
-      // revealjs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
     },
   },
-  { custom: true },
+  { custom: true }
 );
