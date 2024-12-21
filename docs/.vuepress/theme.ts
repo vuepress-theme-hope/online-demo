@@ -1,59 +1,59 @@
-import { hopeTheme } from 'vuepress-theme-hope';
+import { hopeTheme } from "vuepress-theme-hope";
 
-import { enNavbar, zhNavbar } from './navbar/index.js';
-import { enSidebar, zhSidebar } from './sidebar/index.js';
+import { enNavbar, zhNavbar } from "./navbar/index.js";
+import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme(
   {
-    hostname: 'https://your.domain',
+    hostname: "https://your.domain",
 
     author: {
-      name: 'Your name',
-      url: 'https://your.domain',
+      name: "Your name",
+      url: "https://your.domain",
     },
 
-    iconAssets: 'fontawesome-with-brands',
+    iconAssets: "fontawesome-with-brands",
 
-    logo: 'https://theme-hope-assets.vuejs.press/logo.svg',
+    logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-    repo: 'vuepress-theme-hope/online-demo',
+    repo: "vuepress-theme-hope/online-demo",
 
-    docsDir: 'docs',
+    docsDir: "docs",
 
     locales: {
-      '/': {
+      "/": {
         // Navbar
         navbar: enNavbar,
 
         // Sidebar
         sidebar: enSidebar,
 
-        footer: 'Default footer',
+        footer: "Default footer",
 
         displayFooter: true,
 
         metaLocales: {
-          editLink: 'Edit this page on GitHub',
+          editLink: "Edit this page on GitHub",
         },
       },
 
       /**
        * Chinese locale config
        */
-      '/zh/': {
+      "/zh/": {
         // Navbar
         navbar: zhNavbar,
 
         // Sidebar
         sidebar: zhSidebar,
 
-        footer: '默认页脚',
+        footer: "默认页脚",
 
         displayFooter: true,
 
         // Page meta
         metaLocales: {
-          editLink: '在 GitHub 上编辑此页',
+          editLink: "在 GitHub 上编辑此页",
         },
       },
     },
@@ -61,9 +61,9 @@ export default hopeTheme(
     encrypt: {
       config: {
         // eslint-disable-next-line @typescript-eslint/naming-convention
-        '/demo/encrypt.html': ['1234'],
+        "/demo/encrypt.html": ["1234"],
         // eslint-disable-next-line @typescript-eslint/naming-convention
-        '/zh/demo/encrypt.html': ['1234'],
+        "/zh/demo/encrypt.html": ["1234"],
       },
     },
 
@@ -77,13 +77,13 @@ export default hopeTheme(
       spoiler: true,
       stylize: [
         {
-          matcher: 'Recommended',
+          matcher: "Recommended",
           replacer: ({ tag }) => {
-            if (tag === 'em')
+            if (tag === "em")
               return {
-                tag: 'Badge',
-                attrs: { type: 'tip' },
-                content: 'Recommended',
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
               };
           },
         },
@@ -127,15 +127,15 @@ export default hopeTheme(
     plugins: {
       // You should generate and use your own comment service
       comment: {
-        provider: 'Giscus',
-        repo: 'vuepress-theme-hope/giscus-discussions',
-        repoId: 'R_kgDOG_Pt2A',
-        category: 'Announcements',
-        categoryId: 'DIC_kwDOG_Pt2M4COD69',
+        provider: "Giscus",
+        repo: "vuepress-theme-hope/giscus-discussions",
+        repoId: "R_kgDOG_Pt2A",
+        category: "Announcements",
+        categoryId: "DIC_kwDOG_Pt2M4COD69",
       },
 
       components: {
-        components: ['Badge', 'VPCard'],
+        components: ["Badge", "VPCard"],
       },
 
       // uncomment these if you want a pwa
@@ -195,5 +195,5 @@ export default hopeTheme(
       //   },
     },
   },
-  { custom: true }
+  { custom: true },
 );
