@@ -12,8 +12,6 @@ export default hopeTheme(
       url: "https://your.domain",
     },
 
-    iconAssets: "fontawesome-with-brands",
-
     logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
     repo: "vuepress-theme-hope/online-demo",
@@ -136,6 +134,10 @@ export default hopeTheme(
 
       components: {
         components: ["Badge", "VPCard"],
+      },
+
+      icon: {
+        assets: "fontawesome-with-brands",
       },
 
       // uncomment these if you want a pwa
