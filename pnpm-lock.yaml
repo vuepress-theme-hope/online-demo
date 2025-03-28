@@ -9,8 +9,8 @@ devDependencies:
     specifier: 2.0.0-rc.20
     version: 2.0.0-rc.20(sass@1.85.1)
   '@vuepress/helper':
-    specifier: 2.0.0-rc.82
-    version: 2.0.0-rc.82(vuepress@2.0.0-rc.20)
+    specifier: 2.0.0-rc.90
+    version: 2.0.0-rc.90(vuepress@2.0.0-rc.20)
   sass:
     specifier: ^1.85.1
     version: 1.85.1
@@ -1396,13 +1396,13 @@ packages:
       - typescript
     dev: true
 
-  /@vuepress/helper@2.0.0-rc.82(vuepress@2.0.0-rc.20):
-    resolution: {integrity: sha512-5NSvO92/FvAgRRPzB4n//T13yhdeY1rLHG9N6z4EwCA+xnAU7x7MppbT0mY3e2avGv9f16oByr2ZkXPtJxk7gQ==}
+  /@vuepress/helper@2.0.0-rc.86(vuepress@2.0.0-rc.20):
+    resolution: {integrity: sha512-gWsH+m0EINYhx+aylFwSlPB9nHAmJwTqBZDttdm7y7GZxVkL5BtI9q+wN0/56UxXkATpVltZq/EfNuLpibr9WQ==}
     peerDependencies:
       vuepress: 2.0.0-rc.20
     dependencies:
       '@vue/shared': 3.5.13
-      '@vueuse/core': 12.8.2
+      '@vueuse/core': 13.0.0(vue@3.5.13)
       cheerio: 1.0.0
       fflate: 0.8.2
       gray-matter: 4.0.3
@@ -1412,8 +1412,8 @@ packages:
       - typescript
     dev: true
 
-  /@vuepress/helper@2.0.0-rc.86(vuepress@2.0.0-rc.20):
-    resolution: {integrity: sha512-gWsH+m0EINYhx+aylFwSlPB9nHAmJwTqBZDttdm7y7GZxVkL5BtI9q+wN0/56UxXkATpVltZq/EfNuLpibr9WQ==}
+  /@vuepress/helper@2.0.0-rc.90(vuepress@2.0.0-rc.20):
+    resolution: {integrity: sha512-Muka4gW9LP+Sy1okW51bjxzFqAu0V7fzxQIhPQYMWmG9odbyR1yalxVUETeQNt6j0j7xWf+V8cbIb8QHmaXokQ==}
     peerDependencies:
       vuepress: 2.0.0-rc.20
     dependencies:
@@ -1911,17 +1911,6 @@ packages:
       - supports-color
     dev: true
 
-  /@vueuse/core@12.8.2:
-    resolution: {integrity: sha512-HbvCmZdzAu3VGi/pWYm5Ut+Kd9mn1ZHnn4L5G8kOQTPs/IwIAmJoBrmYk2ckLArgMXZj0AW3n5CAejLUO+PhdQ==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.21
-      '@vueuse/metadata': 12.8.2
-      '@vueuse/shared': 12.8.2
-      vue: 3.5.13
-    transitivePeerDependencies:
-      - typescript
-    dev: true
-
   /@vueuse/core@13.0.0(vue@3.5.13):
     resolution: {integrity: sha512-rkgb4a8/0b234lMGCT29WkCjPfsX0oxrIRR7FDndRoW3FsaC9NBzefXg/9TLhAgwM11f49XnutshM4LzJBrQ5g==}
     peerDependencies:
@@ -1933,20 +1922,8 @@ packages:
       vue: 3.5.13
     dev: true
 
-  /@vueuse/metadata@12.8.2:
-    resolution: {integrity: sha512-rAyLGEuoBJ/Il5AmFHiziCPdQzRt88VxR+Y/A/QhJ1EWtWqPBBAxTAFaSkviwEuOEZNtW8pvkPgoCZQ+HxqW1A==}
-    dev: true
-
   /@vueuse/metadata@13.0.0:
     resolution: {integrity: sha512-TRNksqmvtvqsuHf7bbgH9OSXEV2b6+M3BSN4LR5oxWKykOFT9gV78+C2/0++Pq9KCp9KQ1OQDPvGlWNQpOb2Mw==}
-    dev: true
-
-  /@vueuse/shared@12.8.2:
-    resolution: {integrity: sha512-dznP38YzxZoNloI0qpEfpkms8knDtaoQ6Y/sfS0L7Yki4zh40LFHEhur0odJC6xTHG5dxWVPiUWBXn+wCG2s5w==}
-    dependencies:
-      vue: 3.5.13
-    transitivePeerDependencies:
-      - typescript
     dev: true
 
   /@vueuse/shared@13.0.0(vue@3.5.13):
@@ -3523,7 +3500,7 @@ packages:
         optional: true
     dependencies:
       '@stackblitz/sdk': 1.11.0
-      '@vuepress/helper': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.90(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-sass-palette': 2.0.0-rc.86(sass@1.85.1)(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.0.0(vue@3.5.13)
       balloon-css: 1.2.0
@@ -3588,7 +3565,7 @@ packages:
       '@mdit/plugin-plantuml': 0.16.0(markdown-it@14.1.0)
       '@mdit/plugin-uml': 0.16.0(markdown-it@14.1.0)
       '@types/markdown-it': 14.1.2
-      '@vuepress/helper': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.90(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-sass-palette': 2.0.0-rc.86(sass@1.85.1)(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.0.0(vue@3.5.13)
       balloon-css: 1.2.0
@@ -3608,7 +3585,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.20
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.90(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.0.0(vue@3.5.13)
       dayjs: 1.11.13
       vue: 3.5.13
@@ -3663,7 +3640,7 @@ packages:
       sass-loader:
         optional: true
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.90(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-active-header-links': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-back-to-top': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-blog': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
