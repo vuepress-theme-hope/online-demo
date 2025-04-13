@@ -9,8 +9,8 @@ devDependencies:
     specifier: 2.0.0-rc.20
     version: 2.0.0-rc.20(sass@1.86.3)
   '@vuepress/helper':
-    specifier: 2.0.0-rc.92
-    version: 2.0.0-rc.92(vuepress@2.0.0-rc.20)
+    specifier: 2.0.0-rc.94
+    version: 2.0.0-rc.94(vuepress@2.0.0-rc.20)
   sass:
     specifier: ^1.86.3
     version: 1.86.3
@@ -1392,6 +1392,22 @@ packages:
     resolution: {integrity: sha512-lwJd9x4tHZdkEwl+WM6XioNm1SoalA8g3+aHBybww2Zuohwm9sByh+xgV+NIvbbfO8LoAnj+h0SvhXQlD9PY8A==}
     peerDependencies:
       vuepress: 2.0.0-rc.20
+    dependencies:
+      '@vue/shared': 3.5.13
+      '@vueuse/core': 13.1.0(vue@3.5.13)
+      cheerio: 1.0.0
+      fflate: 0.8.2
+      gray-matter: 4.0.3
+      vue: 3.5.13
+      vuepress: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20)(vue@3.5.13)
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
+  /@vuepress/helper@2.0.0-rc.94(vuepress@2.0.0-rc.20):
+    resolution: {integrity: sha512-Hl6LeNMUgxAyJeHau6O2GBoj92ZCUnJ29jnb63pyDSG2/hT9Y6unl8G6KH5YBJXUTP5RQmPVpjeX/v2gqNoWIA==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.21
     dependencies:
       '@vue/shared': 3.5.13
       '@vueuse/core': 13.1.0(vue@3.5.13)
@@ -3477,7 +3493,7 @@ packages:
         optional: true
     dependencies:
       '@stackblitz/sdk': 1.11.0
-      '@vuepress/helper': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.94(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.86.3)(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.1.0(vue@3.5.13)
       balloon-css: 1.2.0
@@ -3542,7 +3558,7 @@ packages:
       '@mdit/plugin-plantuml': 0.16.0(markdown-it@14.1.0)
       '@mdit/plugin-uml': 0.16.0(markdown-it@14.1.0)
       '@types/markdown-it': 14.1.2
-      '@vuepress/helper': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.94(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.86.3)(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.1.0(vue@3.5.13)
       balloon-css: 1.2.0
@@ -3562,7 +3578,7 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.20
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.94(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.1.0(vue@3.5.13)
       dayjs: 1.11.13
       vue: 3.5.13
@@ -3617,7 +3633,7 @@ packages:
       sass-loader:
         optional: true
     dependencies:
-      '@vuepress/helper': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
+      '@vuepress/helper': 2.0.0-rc.94(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-active-header-links': 2.0.0-rc.86(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-back-to-top': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-blog': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
