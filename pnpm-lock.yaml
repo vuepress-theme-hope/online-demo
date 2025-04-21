@@ -7,13 +7,13 @@ settings:
 devDependencies:
   '@vuepress/bundler-vite':
     specifier: 2.0.0-rc.20
-    version: 2.0.0-rc.20(sass@1.86.3)
+    version: 2.0.0-rc.20(sass@1.87.0)
   '@vuepress/helper':
     specifier: 2.0.0-rc.92
     version: 2.0.0-rc.92(vuepress@2.0.0-rc.20)
   sass:
     specifier: ^1.86.3
-    version: 1.86.3
+    version: 1.87.0
   vue:
     specifier: ^3.5.13
     version: 3.5.13
@@ -22,7 +22,7 @@ devDependencies:
     version: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20)(vue@3.5.13)
   vuepress-theme-hope:
     specifier: 2.0.0-rc.79
-    version: 2.0.0-rc.79(markdown-it@14.1.0)(sass@1.86.3)(vuepress@2.0.0-rc.20)
+    version: 2.0.0-rc.79(markdown-it@14.1.0)(sass@1.87.0)(vuepress@2.0.0-rc.20)
 
 packages:
 
@@ -1194,7 +1194,7 @@ packages:
       vite: ^5.0.0 || ^6.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 6.1.4(sass@1.86.3)
+      vite: 6.1.4(sass@1.87.0)
       vue: 3.5.13
     dev: true
 
@@ -1300,7 +1300,7 @@ packages:
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
     dev: true
 
-  /@vuepress/bundler-vite@2.0.0-rc.20(sass@1.86.3):
+  /@vuepress/bundler-vite@2.0.0-rc.20(sass@1.87.0):
     resolution: {integrity: sha512-h+b/TSWidqGpnZ6YnMYm35HVSZFk+vCjzgR78SuNrQBd7kkTU2EDvd5sPD1LaoRe7QBSWDm288oDoiDNE0hW3Q==}
     dependencies:
       '@vitejs/plugin-vue': 5.2.3(vite@6.1.4)(vue@3.5.13)
@@ -1314,7 +1314,7 @@ packages:
       postcss: 8.5.3
       postcss-load-config: 6.0.1(postcss@8.5.3)
       rollup: 4.39.0
-      vite: 6.1.4(sass@1.86.3)
+      vite: 6.1.4(sass@1.87.0)
       vue: 3.5.13
       vue-router: 4.5.0(vue@3.5.13)
     transitivePeerDependencies:
@@ -1784,7 +1784,7 @@ packages:
       - typescript
     dev: true
 
-  /@vuepress/plugin-sass-palette@2.0.0-rc.92(sass@1.86.3)(vuepress@2.0.0-rc.20):
+  /@vuepress/plugin-sass-palette@2.0.0-rc.92(sass@1.87.0)(vuepress@2.0.0-rc.20):
     resolution: {integrity: sha512-qFG4pGvO7T5O4U3vGEsAgxvM77CoE3W0djGsTAJ7dE6oVxbazXFiU9a/iWdo/JNib+cRvVI6PULlgvs9S7rVEw==}
     peerDependencies:
       sass: ^1.86.0
@@ -1801,7 +1801,7 @@ packages:
     dependencies:
       '@vuepress/helper': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
       chokidar: 4.0.3
-      sass: 1.86.3
+      sass: 1.87.0
       vuepress: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20)(vue@3.5.13)
     transitivePeerDependencies:
       - typescript
@@ -3110,8 +3110,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass@1.86.3:
-    resolution: {integrity: sha512-iGtg8kus4GrsGLRDLRBRHY9dNVA78ZaS7xr01cWnS7PEMQyFtTqBiyCrfpTYTZXRWM94akzckYjh8oADfFNTzw==}
+  /sass@1.87.0:
+    resolution: {integrity: sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -3373,7 +3373,7 @@ packages:
       vfile-message: 4.0.2
     dev: true
 
-  /vite@6.1.4(sass@1.86.3):
+  /vite@6.1.4(sass@1.87.0):
     resolution: {integrity: sha512-VzONrF/qqEg/JBwHXBJdVSmBZBhwiPGinyUb0SQLByqQwi6o8UvX5TWLkpvkq3tvN8Cr273ieZDt36CGwWRMvA==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
@@ -3416,7 +3416,7 @@ packages:
       esbuild: 0.24.2
       postcss: 8.5.3
       rollup: 4.39.0
-      sass: 1.86.3
+      sass: 1.87.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
@@ -3445,7 +3445,7 @@ packages:
       '@vue/shared': 3.5.13
     dev: true
 
-  /vuepress-plugin-components@2.0.0-rc.79(sass@1.86.3)(vuepress@2.0.0-rc.20):
+  /vuepress-plugin-components@2.0.0-rc.79(sass@1.87.0)(vuepress@2.0.0-rc.20):
     resolution: {integrity: sha512-/fqmV56JyQyX5nPyMOUvEoY5P6gH1FQNhXC9NWtosZ9I+VA+rLrPReknoJTMI7UKcKuIocWBJUhPxhT6QcKJGA==}
     engines: {node: ^18.19.0 || >= 20.6.0, npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -3478,12 +3478,12 @@ packages:
     dependencies:
       '@stackblitz/sdk': 1.11.0
       '@vuepress/helper': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
-      '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.86.3)(vuepress@2.0.0-rc.20)
+      '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.87.0)(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.1.0(vue@3.5.13)
       balloon-css: 1.2.0
       create-codepen: 2.0.0
       qrcode: 1.5.4
-      sass: 1.86.3
+      sass: 1.87.0
       vue: 3.5.13
       vuepress: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20)(vue@3.5.13)
       vuepress-shared: 2.0.0-rc.79(vuepress@2.0.0-rc.20)
@@ -3491,7 +3491,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-plugin-md-enhance@2.0.0-rc.79(markdown-it@14.1.0)(sass@1.86.3)(vuepress@2.0.0-rc.20):
+  /vuepress-plugin-md-enhance@2.0.0-rc.79(markdown-it@14.1.0)(sass@1.87.0)(vuepress@2.0.0-rc.20):
     resolution: {integrity: sha512-e3fBPdvzPhcmvwbtdUS1/VO2+T/0ETPMBCqWbdf+ArTy6PUjmKwaNT4sBW5YAd7x8XRTy1nwcRM0U4yWd2DeKw==}
     engines: {node: ^18.19.0 || >= 20.6.0, npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -3543,11 +3543,11 @@ packages:
       '@mdit/plugin-uml': 0.16.0(markdown-it@14.1.0)
       '@types/markdown-it': 14.1.2
       '@vuepress/helper': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
-      '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.86.3)(vuepress@2.0.0-rc.20)
+      '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.87.0)(vuepress@2.0.0-rc.20)
       '@vueuse/core': 13.1.0(vue@3.5.13)
       balloon-css: 1.2.0
       js-yaml: 4.1.0
-      sass: 1.86.3
+      sass: 1.87.0
       vue: 3.5.13
       vuepress: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20)(vue@3.5.13)
       vuepress-shared: 2.0.0-rc.79(vuepress@2.0.0-rc.20)
@@ -3571,7 +3571,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-theme-hope@2.0.0-rc.79(markdown-it@14.1.0)(sass@1.86.3)(vuepress@2.0.0-rc.20):
+  /vuepress-theme-hope@2.0.0-rc.79(markdown-it@14.1.0)(sass@1.87.0)(vuepress@2.0.0-rc.20):
     resolution: {integrity: sha512-K1SxiDkBMprUl9WnmjlBdagySaesBOsMOh+NCaBxLJF3IV30LYFKPs+7cx29D8Qku8jdU1BMk3yoTQWsh3XxQw==}
     engines: {node: ^18.19.0 || >= 20.6.0, npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -3641,7 +3641,7 @@ packages:
       '@vuepress/plugin-reading-time': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-redirect': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-rtl': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
-      '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.86.3)(vuepress@2.0.0-rc.20)
+      '@vuepress/plugin-sass-palette': 2.0.0-rc.92(sass@1.87.0)(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-seo': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-shiki': 2.0.0-rc.92(@vueuse/core@13.1.0)(vuepress@2.0.0-rc.20)
       '@vuepress/plugin-sitemap': 2.0.0-rc.92(vuepress@2.0.0-rc.20)
@@ -3650,11 +3650,11 @@ packages:
       balloon-css: 1.2.0
       bcrypt-ts: 6.0.0
       chokidar: 3.6.0
-      sass: 1.86.3
+      sass: 1.87.0
       vue: 3.5.13
       vuepress: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20)(vue@3.5.13)
-      vuepress-plugin-components: 2.0.0-rc.79(sass@1.86.3)(vuepress@2.0.0-rc.20)
-      vuepress-plugin-md-enhance: 2.0.0-rc.79(markdown-it@14.1.0)(sass@1.86.3)(vuepress@2.0.0-rc.20)
+      vuepress-plugin-components: 2.0.0-rc.79(sass@1.87.0)(vuepress@2.0.0-rc.20)
+      vuepress-plugin-md-enhance: 2.0.0-rc.79(markdown-it@14.1.0)(sass@1.87.0)(vuepress@2.0.0-rc.20)
       vuepress-shared: 2.0.0-rc.79(vuepress@2.0.0-rc.20)
     transitivePeerDependencies:
       - '@vue/repl'
@@ -3695,7 +3695,7 @@ packages:
       '@vuepress/bundler-webpack':
         optional: true
     dependencies:
-      '@vuepress/bundler-vite': 2.0.0-rc.20(sass@1.86.3)
+      '@vuepress/bundler-vite': 2.0.0-rc.20(sass@1.87.0)
       '@vuepress/cli': 2.0.0-rc.20
       '@vuepress/client': 2.0.0-rc.20
       '@vuepress/core': 2.0.0-rc.20
