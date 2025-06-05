@@ -112,7 +112,7 @@ const MyComponent = defineComponent({
 
 主题包含一些有用的组件。这里是一些例子:
 
-- 文字结尾应该有深蓝色的 徽章文字 徽章。 <Badge text="徽章文字" color="#242378" />
+- 一个徽章：<Badge text="徽章文字" />
 
 - 一个卡片:
 

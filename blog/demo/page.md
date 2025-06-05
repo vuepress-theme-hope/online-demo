@@ -108,7 +108,7 @@ const MyComponent = defineComponent({
 
 The theme contains some useful components. Here are some examples:
 
-- A dark blue badge text badge at the end of line. <Badge text="Badge text" color="#242378" />
+- A badge at the end of line. <Badge text="Badge text" />
 
 - A card:
 
