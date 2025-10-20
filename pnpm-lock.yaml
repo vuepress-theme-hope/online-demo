@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.0-rc.26
         version: 2.0.0-rc.26(@types/node@24.7.2)(sass@1.93.2)
       '@vuepress/helper':
-        specifier: 2.0.0-rc.114
-        version: 2.0.0-rc.114(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@24.7.2)(sass@1.93.2))(vue@3.5.22))
+        specifier: 2.0.0-rc.115
+        version: 2.0.0-rc.115(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@24.7.2)(sass@1.93.2))(vue@3.5.22))
       sass:
         specifier: ^1.93.2
         version: 1.93.2
@@ -817,6 +817,11 @@ packages:
 
   '@vuepress/helper@2.0.0-rc.114':
     resolution: {integrity: sha512-WYtqOOzr26C6gnPqNDYCnUkcwYQZd34CfhozT835grXi0Ozbrfd1C1487hdINB+O0ZGVNR+s0AJlZ1XcDX7tag==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.26
+
+  '@vuepress/helper@2.0.0-rc.115':
+    resolution: {integrity: sha512-Ex7KtcZMp2LJmKrcQihxPc2v132lyO+zU5emuq7UjAkEqIa2vduXj6qtfQoBDH1g9CUIVFbK2p/60xILwxzR2A==}
     peerDependencies:
       vuepress: 2.0.0-rc.26
 
@@ -1687,6 +1692,7 @@ packages:
   sitemap@8.0.0:
     resolution: {integrity: sha512-+AbdxhM9kJsHtruUF39bwS/B0Fytw6Fr1o4ZAIAEqA6cke2xcoO2GleBw9Zw7nRzILVEgz7zBM5GiTJjie1G9A==}
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    deprecated: 'SECURITY: Multiple vulnerabilities fixed in 8.0.1 (XML injection, path traversal, command injection, protocol injection). Upgrade immediately: npm install sitemap@8.0.1'
     hasBin: true
 
   source-map-js@1.2.1:
@@ -2717,6 +2723,18 @@ snapshots:
       - typescript
 
   '@vuepress/helper@2.0.0-rc.114(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@24.7.2)(sass@1.93.2))(vue@3.5.22))':
+    dependencies:
+      '@vue/shared': 3.5.22
+      '@vueuse/core': 13.9.0(vue@3.5.22)
+      cheerio: 1.1.2
+      fflate: 0.8.2
+      gray-matter: 4.0.3
+      vue: 3.5.22
+      vuepress: 2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@24.7.2)(sass@1.93.2))(vue@3.5.22)
+    transitivePeerDependencies:
+      - typescript
+
+  '@vuepress/helper@2.0.0-rc.115(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@24.7.2)(sass@1.93.2))(vue@3.5.22))':
     dependencies:
       '@vue/shared': 3.5.22
       '@vueuse/core': 13.9.0(vue@3.5.22)
